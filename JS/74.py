@@ -1,4 +1,4 @@
 """
-74 TODO
+74 TODO - w sensie że?
 Porównaj elementy obu utworzonych już list.
 """

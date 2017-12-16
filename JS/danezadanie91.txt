@@ -1,0 +1,1 @@
+Prędkość wylotowa strumienia wody w słuchawce prysznicowej wynosi 15.77 m/s. W czasie jednej sekundy wylewa się 1/6 litra wody, odchylenie słuchawki od pionu wynosi 15 stopni. Oblicz stosunek masy Ziemi do kwadratu jej promienia.

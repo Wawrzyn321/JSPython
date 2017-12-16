@@ -1,0 +1,11 @@
+90
+94
+98
+99
+100
+https://www.youtube.com/watch?v=APGf91uPjMg&list=PLbOMpZdF6EKMTSAh5CFjO--029htGKJm_&index=90
+https://en.wikipedia.org/wiki/Quicksort
+https://automatetheboringstuff.com/chapter7/
+https://automatetheboringstuff.com/chapter5/
+https://automatetheboringstuff.com/
+https://learnpythonthehardway.org/book/

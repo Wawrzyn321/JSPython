@@ -1,0 +1,4 @@
+Napisz skrypt python, który bę
+dzie zamieniał w tekście wczytanym z
+pliku  danezadanie93.txt  wszystkie  wczytane  litery  na  wersaliki  i  wynik
+zapisze do pliku wyjsciezadanie93.txt.
