@@ -11,9 +11,8 @@ c. Quick sort
 
 import random  # randint
 import copy  # copy
-import time
 
-
+# bąbelkowe
 def bańki(t):
     sorted = False
     while not sorted:
@@ -27,7 +26,7 @@ def bańki(t):
                 sorted = False
                 break
 
-
+# wstawianie
 def wklej(t):
     sorted = False
     while not sorted:
@@ -53,44 +52,47 @@ def wklej(t):
                 sorted = False
                 break
 
-def qsort(A, lo, hi):
-    if lo < hi:
-        p = partition(A, lo, hi)
-        qsort(A, lo, p - 1)
-        qsort(A, p + 1, hi)
+# qsort
+def zwyciężaj(t, s, e):
+    if s < e:
+        split = dziel( t, s, e)
+        zwyciężaj(t, s, split - 1)
+        zwyciężaj(t, split + 1, e)
+    return t
 
-def partition(A, lo, hi):
-    pivot = A[hi]
-    i = lo - 1
-    for j := lo to hi - 1 do
-        if A[j] < pivot then
-            i := i + 1
-            swap A[i] with A[j]
-    if A[hi] < A[i + 1] then
-        swap A[i + 1] with A[hi]
-    return i + 1
+# pomocnicza do qsortu - znajdowanie miejsca podziału
+# u nas to po pierwszy element
+def dziel(t, s, e):
+    pivot = t[s]
+    i = s + 1
+    for j in range( s + 1, e + 1 ):
+        if t[j] < pivot:
+            t[i], t[j] = t[j], t[i]
+            i += 1
+    t[s], t[i - 1] = t[i - 1], t[s]
+    return i-1
 
+# wywołanie qsortu
 def rzymianie(t):
-    qsort(t, 0, len(t)-1)
+    zwyciężaj(t, 0, len(t)-1)
+
+# skopiuj dane, posortuj je wybranym algorytmem i wypisz
+def sortowania(dane, funkcja):
+    dane2 = copy.copy(dane) # kopia, bo modyfikujemy tylko dane2
+
+    funkcja(dane2)
+    print(dane2)
 
 dane = [random.randint(-10,10 + 1) for i in range(20)]
 print(dane)
 
-# a) bąbelkowe
-dane2 = copy.copy(dane) # kopia, bo modyfikujemy tylko dane2
 
-bańki(dane2)
-print(dane2)
+# a) bąbelkowe
+sortowania(dane, bańki)
 
 # b) wstawianie
-dane2 = copy.copy(dane) # kopia, bo modyfikujemy tylko dane2
-
-wklej(dane2)
-print(dane2)
-
+sortowania(dane, wklej)
 
 # c) qsort
-dane2dane2 = copy.copy(dane) # kopia, bo modyfikujemy tylko dane2
+sortowania(dane, rzymianie)
 
-rzymianie(dane2)
-print(dane2)
