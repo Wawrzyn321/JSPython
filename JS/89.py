@@ -7,8 +7,10 @@ wyjsciezadanie89.txt.
 """
 
 plik = "danezadanie89.txt"
-data = open(plik).read().split("\n")
-data = filter(None, data )
+# tutaj czytanie pliku jest nieco inaczej
+data = open(plik).read()
+data = data.strip()
+data = data.splitlines(False)
 data = [int(i) for i in data ]
 
 pOut = open("wyjsciezadanie89.txt", "w")

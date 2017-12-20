@@ -1,0 +1,30 @@
+- typowanie jest totalnie dynamiczne, a zmiennych nie trzeba jawnie deklarowaæ. Jeœli niechc¹cy zamiast 'zmienna0110 = 0' napiszemy 
+'zmiena0110 = 0', to kompilator nie poinformuje nas o b³êdzie
+
+- typy int, float (to samo co zwyczajne double), string (nie ma char)
+- konwersje typów: float(<zmienna>), int(<zmienna>), string(<zmienna>)
+
+- nie ma klamerów, tylko wciêcia o jednakowej szerokoœci jako oznaczenie bloków kodu
+- nie ma œredników (znaczy mog¹ byæ, ale po co)
+
+- zamiast && jest and, or, not itd.
+- zamiast true / false jest True / False
+- zamiast else if mo¿na pisaæ elifs
+
+- zamiast operatora ? jest takie dziadostwo:
+	<jeœli_prawda> if <warunek> else <jeœli_fa³sz>
+
+- operator ** jako potêgowanie
+
+- fory, ify, elsy zakoñczamy dwukropkiem
+
+- najwa¿niejsze kolekcje:
+	lista [x, y, ]- swobodna modyfikacja elementów
+	krotka (x, y, ) / tupla - niemodyfikowalna
+	s³ownik {x: y, } - zbiór par
+- sprawdzanie, czy coœ jest w kolekcji: if <coœ> in <kolekcja>
+- cytuj¹c SO: "Tuples have structure, lists have order"
+
+- pêtle:
+	for <zmienna> in <kolekcja>: <=> foreach(<zmienna> : <kolekcja>)
+	for i in range(zakres): <=> for(int i=0;i<zakres;i++)

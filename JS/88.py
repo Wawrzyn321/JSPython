@@ -18,9 +18,10 @@ def silnia(n):
         w *= i
     return w
 
+v = int(input("Ile? "))
 
-v = int(input())
-
-print(silniaRek(v))
-print(silnia(v))
-print(math.factorial(v))
+print("{}\n{}\n{}\n".format(
+    silniaRek(v),
+    silnia(v),
+    math.factorial(v)
+))
