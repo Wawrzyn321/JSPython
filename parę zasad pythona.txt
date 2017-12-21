@@ -6,6 +6,7 @@
 
 - nie ma klamerów, tylko wciêcia o jednakowej szerokoœci jako oznaczenie bloków kodu
 - nie ma œredników (znaczy mog¹ byæ, ale po co)
+- nie ma do...while, jest tylko while
 
 - zamiast && jest and, or, not itd.
 - zamiast true / false jest True / False
@@ -28,3 +29,9 @@
 - pêtle:
 	for <zmienna> in <kolekcja>: <=> foreach(<zmienna> : <kolekcja>)
 	for i in range(zakres): <=> for(int i=0;i<zakres;i++)
+
+- komentarze:
+	# jako //
+	""" jako /*, */
+
+- wartoœci s¹ przesy³ane fo funkcji zawsze przez referencjê
