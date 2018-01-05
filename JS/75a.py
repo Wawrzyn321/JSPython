@@ -13,6 +13,15 @@ def isIterable(val):
     except TypeError:
         return False
 
+# mozna ladniej
+# https://docs.python.org/3/library/collections.abc.html
+# - przyp. red.
+from collections import abc
+
+def is_iterable(val):
+    return isinstance(val, abc.Iterable)
+
+is_iterable([1])
 
 # sprawdzenie, czy element jest listą
 # UWAGA: funkcja zwraca False dla łańcuchów znaków

@@ -32,6 +32,6 @@
 
 - komentarze:
 	# jako //
-	""" jako /*, */
+	""" jako /*, */ (nieoficjalnie, bo """ jest te¿ u¿ywane w stringach - W.)
 
-- wartoœci s¹ przesy³ane fo funkcji zawsze przez referencjê
+- wartoœci s¹ przesy³ane do funkcji zawsze przez referencjê (ale tylko intuicyjnie, bo tak naprawdê "argumenty funkcji s¹ przesy³ane ZAWSZE by value, tyle ¿e ka¿dy argument jest referencja" (red.). Nie b³¹dŸcie. - W.)

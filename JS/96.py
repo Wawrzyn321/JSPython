@@ -13,7 +13,10 @@ a = int(input())
 b = int(input())
 #dzisiaj nie sprawdzamy poprawności przedziału
 
-a = ceilTo4(a)
+# normalnie jak w tym zarcie o calce oznaczonej wsiadajacej do pociagu, ktory wisi na wydziale...
+# - przyp. zazenowanej redakcji
+
+a = int(ceilTo4(a))
 
 for i in range(a, b + 1, 4):
     if i % 100 == 0 and i % 400 != 0:

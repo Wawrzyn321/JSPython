@@ -4,9 +4,7 @@ Napisz skrypt python sprawdzający unikalność linków
 do stron zewnętrznych jakie znajdują się w podanej
 jako argument wywołania stronie www.
 
-HTML crawling: Bartosz "Bartek" Ścigała
-
-# no klas w pythonie jeszcze nie robiłem...
+HTML crawling napisany przez redakcje
 """
 
 import urllib.request
@@ -29,6 +27,7 @@ if len(sys.argv) < 2:
     print("brak argumentu wywołania!")
     exit(-1)
 adres = sys.argv[1] # pierwszym argumentem jest jak widzę nazwa pliku
+# tak - przyp. red.
 parser = MyHTMLParser()
 
 print("Zaczynam szukanie...")

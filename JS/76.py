@@ -5,7 +5,8 @@ konsoli napis zależnie od wartości pobranej liczby „więcej niż zero” lub
 „mniej niż zero”.
 """
 
-v = input("Daj liczbę: ")
+v = float(input("Daj liczbę: "))
+# malo kulturalne - przyp. red.
 if v > 0:
     print("więcej niż zero")
 elif v < 0:
